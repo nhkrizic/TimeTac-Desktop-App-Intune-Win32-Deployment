@@ -1,0 +1,1 @@
+﻿Start-Process "C:\Program Files\TimeTac Desktop App\Uninstall TimeTac Desktop App.exe" /S -Wait -WindowStyle Hidden 
