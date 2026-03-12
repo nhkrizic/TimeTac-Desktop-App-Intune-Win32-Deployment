@@ -23,7 +23,7 @@
    - **Uninstall command**  
      `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Uninstall.ps1`  
    - **Install behavior**: `System`  
-   - **Detection (Custom Script)**: Pfadprüfung `C:\Program Files\TimeTac Desktop App` (bzw. `(x86)` wenn zutreffend).  
+   - **Detection**: Pfadprüfung `C:\Program Files\TimeTac Desktop App` (bzw. `(x86)` wenn zutreffend).  
      Für allgemeine Win32‑Deployments und Detection‑Basics siehe:  
      * [How to deploy Win32 Apps with Intune (Guide)](https://www.prajwaldesai.com/deploy-win32-apps-with-intune/) [2](https://www.prajwaldesai.com/deploy-win32-apps-with-intune/)  
      * [Intune Win32 App Deployment – Step by Step](https://www.anoopcnair.com/intune-win32-app-deployment/) [3](https://www.anoopcnair.com/intune-win32-app-deployment/)
@@ -37,10 +37,6 @@
 - **Install klappt lokal, schlägt aber in Intune fehl**  
   Stelle sicher, dass die Ausführung **explizit** über PowerShell erfolgt (`powershell.exe -File …`) und die App im **System‑Kontext** installiert wird.  
   → Offizielle Hinweise zur Paketvorbereitung und Ausführung: [Win32 app prep tool](https://learn.microsoft.com/en-us/intune/intune-service/apps/apps-win32-prepare). [1](https://learn.microsoft.com/en-us/intune/intune-service/apps/apps-win32-prepare)
-
-- **Detection rot, obwohl Desktop-Icon sichtbar**  
-  Nutze eine **Pfad‑Detection** (`C:\Program Files\TimeTac Desktop App` oder `C:\Program Files (x86)\…`). EXE‑Installer setzen ARP‑Einträge (HKLM\Uninstall) nicht immer konsistent – Pfad‑Checks sind oft robuster.  
-  → Praxisguides: [Prajwal Desai](https://www.prajwaldesai.com/deploy-win32-apps-with-intune/), [HTMD](https://www.anoopcnair.com/intune-win32-app-deployment/). [2](https://www.prajwaldesai.com/deploy-win32-apps-with-intune/)[3](https://www.anoopcnair.com/intune-win32-app-deployment/)
 
 - **Logs (Client)**  
   - `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs\IntuneManagementExtension.log`  
