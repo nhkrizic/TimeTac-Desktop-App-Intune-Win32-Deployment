@@ -1,4 +1,10 @@
-## TimeTac Desktop App – Microsoft Intune Win32 Deployment
+
+# TimeTac Desktop App – Intune Win32 Deployment (System-wide + Autostart)
+
+[![PowerShell](https://img.shields.io/badge/PowerShell-7%2B-5391FE?logo=powershell&logoColor=white)](https://learn.microsoft.com/powershell/)
+[![Microsoft Intune](https://img.shields.io/badge/Microsoft%20Intune-Win32-blue?logo=microsoft)](https://learn.microsoft.com/intune/)
+[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D6?logo=windows)](https://learn.microsoft.com/en-us/windows/)
+
 
 ## Überblick
 
