@@ -51,9 +51,6 @@
 Dieses Repo enthält:
 - `Install.ps1` – Silent‑Install + Kopie des Public‑Desktop‑Shortcuts in den All‑Users‑Autostart  
 - `Uninstall.ps1` – Entfernt Autostart‑Link und deinstalliert silent  
-- **(Optional)** Screenshots und eine Beispiel‑Detection (Pfad)
-
-> Hinweis: Den Hersteller‑Installer (**timetac-desktop-app.exe**) bitte **nicht** im Repo hosten; direkt vom Hersteller beziehen.
 
 ## License
 
